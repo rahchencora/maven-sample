@@ -13,7 +13,7 @@ Optional:
 
 ##### Build Docker image
 ```
-$ docker build -t="hello-world-java" .
+$ docker build -t hello-world-java:latest .
 ```
 Maven build will be executes during creation of the docker image.
 
@@ -21,7 +21,7 @@ Maven build will be executes during creation of the docker image.
 
 ##### Run Docker Container
 ```
-$ docker run -p 8080:8080 -it --rm hello-world-java
+$ docker run -p 8080:8080 -it --rm hello-world-java:latest
 ```
 
 ##### Test application
